@@ -129,7 +129,7 @@ abstract class UserServicePlugin(application: Application) extends Plugin with U
       Some(
         Akka.system.scheduler.schedule(0 seconds, i minutes) {
           if ( Logger.isDebugEnabled ) {
-            Logger.debug("[securesocial] calling deleteExpiredTokens()")
+            Logger.debug("[securesocial] calling TEST deleteExpiredTokens()")
           }
           deleteExpiredTokens()
         }
